@@ -1,7 +1,8 @@
 import { PlayIcon } from "lucide-react";
 import Image from "next/image";
 
-export default function Musica(props){
+
+export default function Musica({nome} ){
     return (
         <a
               href=""
@@ -13,7 +14,7 @@ export default function Musica(props){
                 src="/Red_Hot_Chili_Peppers_-_Californication.jpg"
                 alt="Capa Album red hot"
               />
-              <strong>{props.nome}</strong>
+              <strong>{nome}</strong>
               <button className="invisible p-3 pl-4 w-12 h-12 flex itens-center justify-center rounded-full bg-green-400 text-black ml-auto mr-8 group-hover:visible">
                 <PlayIcon />
               </button>

@@ -1,8 +1,10 @@
-import Sidebar from "@/componets/Sidebar";
-import Footer from "@/componets/Footer";
-import Musica from "@/componets/Musica";
-import Album from "@/componets/Album";
-import Buttons from "@/componets/Buttons";
+import Sidebar from "@/app/componets/Sidebar";
+import Footer from "@/app/componets/Footer";
+import Musica from "@/app/componets/Musica";
+import Album from "@/app/componets/Album";
+import Buttons from "@/app/componets/Buttons";
+import { ArrowBigDown, ChevronDown, UserIcon } from "lucide-react";
+import User from "./componets/User";
 
 export default function Home() {
   return (
@@ -10,7 +12,10 @@ export default function Home() {
       <div className="flex flex-1">
         <Sidebar />
         <main className="flex-1 p-6">
-          <Buttons />
+          <div className="flex flex-row justify-between">
+            <Buttons />
+            <User />
+          </div>
           <h1 className="font-semibold text-3xl mt-10">Good Afternoon</h1>
           <div className="grid grid-cols-3 gap-6">
             <Musica nome="Californation" />

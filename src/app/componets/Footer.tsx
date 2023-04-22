@@ -1,4 +1,3 @@
-
 import {
   Maximize2Icon,
   VolumeIcon,
@@ -7,7 +6,7 @@ import {
   Laptop2Icon,
 } from "lucide-react";
 import Image from "next/image";
-import Players from "./Player";
+import Player from "./Player";
 
 export default function Footer() {
   return (
@@ -26,8 +25,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <Players />
-      
+      <Player />
+
       <div className="flex items-center gap-4">
         <Mic2 size={16} />
         <LayoutList size={16} />
